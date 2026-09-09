@@ -2,8 +2,6 @@ import React, { useEffect, useMemo, useState } from 'react';
 import {
   ArrowRight,
   Award,
-  BookOpen,
-  BriefcaseBusiness,
   CalendarDays,
   Check,
   ChevronDown,
@@ -18,9 +16,6 @@ import {
   Network,
   Phone,
   PlayCircle,
-  ShieldCheck,
-  Sparkles,
-  UsersRound,
   WalletCards,
 } from 'lucide-react';
 
@@ -30,12 +25,12 @@ const PAY_FULL = 'https://payhere.lk/pay/of1d57ff4';
 const COURSE_GUIDE_URL = 'https://drive.google.com/file/d/1shDoi1v58m0RUV7rBOCX7JjnWU8TjH4d/view?usp=sharing';
 
 const audience = [
-  { icon: GraduationCap, title: 'O/L හෝ A/L අපේක්ෂකයින්', text: 'තොරතුරු තාක්ෂණය පිළිබඳ පිළිගත් මූලික දැනුමක් ගොඩනඟා ගැනීමට කැමති සිසුන් සඳහා ප්‍රායෝගික ප්‍රවේශ මාර්ගයකි.' },
-  { icon: BookOpen, title: 'රාජ්‍ය විශ්වවිද්‍යාල සිසුන්', text: 'ඔබගේ වර්තමාන විශ්වවිද්‍යාල අධ්‍යයන කටයුතු සමඟ අමතර තොරතුරු තාක්ෂණ දැනුම සහ කුසලතා වර්ධනය කරගන්න.' },
-  { icon: BriefcaseBusiness, title: 'රාජ්‍ය අංශයේ වෘත්තිකයින්', text: 'රාජ්‍ය අංශයේ අවම වශයෙන් වසරක සේවා පළපුරුද්දක් ඇති සුදුසුකම් ලත් අයදුම්කරුවන් සඳහා යෝග්‍ය වේ.' },
-  { icon: UsersRound, title: 'පෞද්ගලික අංශයේ වෘත්තිකයින්', text: 'පෞද්ගලික අංශයේ වසර දෙකක සේවා පළපුරුද්දක් ඇති සුදුසුකම් ලත් අයදුම්කරුවන් සඳහා අවස්ථාව විවෘතයි.' },
-  { icon: ShieldCheck, title: 'නිල ඇඳුම් සේවා සාමාජිකයින්', text: 'අදාළ සේවා පළපුරුද්ද ඇති පොලිස්, යුද, නාවික, ගුවන් හමුදා සහ බන්ධනාගාර නිලධාරීන් සඳහා විවෘත වේ.' },
-  { icon: Sparkles, title: 'පාසල් හැරගිය සහ වෘත්තිය වෙනස් කරන අය', text: 'තොරතුරු තාක්ෂණ ක්ෂේත්‍රයට පිවිසී මූලික මට්ටමේ සිට ප්‍රායෝගික විශ්වාසය ගොඩනඟා ගැනීමට කැමති අය සඳහා නිර්මාණය කර ඇත.' },
+  { image: '/assets/psychology-audience-01.png', alt: 'Information for people interested in counselling careers' },
+  { image: '/assets/psychology-audience-02.png', alt: 'Information for uniformed service members' },
+  { image: '/assets/psychology-audience-03.png', alt: 'Information for government-sector professionals' },
+  { image: '/assets/psychology-audience-04.png', alt: 'Information for private-sector professionals' },
+  { image: '/assets/psychology-audience-05.png', alt: 'Information for state university graduates and applicants' },
+  { image: '/assets/psychology-audience-06.png', alt: 'Information for students who have completed ordinary and advanced level education' },
 ];
 
 const curriculum = [
@@ -163,13 +158,11 @@ function App() {
 
         <section className="section section--soft" id="programme">
           <div className="container">
-            <SectionTitle eyebrow="මෙම පාඨමාලාව කා සඳහාද?" title="විවිධ වෘත්තීය අවස්ථා සඳහා ප්‍රායෝගික තොරතුරු තාක්ෂණ මාර්ගයක්" description="පාසල් හැරගිය අය, විශ්වවිද්‍යාල සිසුන් සහ විවිධ ක්ෂේත්‍රවල පළපුරුදු වෘත්තිකයින් සඳහා මෙම පාඨමාලාව සුදුසු වේ." />
+            <SectionTitle eyebrow="Who is this programme for?" title="A practical pathway for different career stages" description="The eligibility categories listed in the programme document include school leavers, university students, and experienced professionals from a variety of fields." />
             <div className="card-grid audience-grid">
-              {audience.map(({ icon: Icon, title, text }) => (
-                <article className="info-card" key={title}>
-                  <div className="icon-box"><Icon size={20} /></div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
+              {audience.map(({ image, alt }) => (
+                <article className="audience-card" key={image}>
+                  <img src={image} alt={alt} />
                 </article>
               ))}
             </div>
