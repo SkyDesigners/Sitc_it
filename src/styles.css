@@ -143,6 +143,7 @@ button, input, textarea, select { font: inherit; }
 
 .lecturer-feature { width: min(760px, 100%); margin: 0 auto 20px; background: linear-gradient(110deg, #0b3244, #10455a); border-radius: 16px; padding: 18px 24px; display: grid; grid-template-columns: 145px 1fr; gap: 26px; align-items: center; color: #fff; box-shadow: var(--shadow); }
 .lecturer-feature img { width: 145px; height: 145px; object-fit: cover; border-radius: 14px; }
+.lecturer-feature .eyebrow { color: #fff; }
 .lecturer-feature h3 { margin: 2px 0 7px; font-size: 24px; }
 .lecturer-feature p { margin: 0; color: #c3d2d7; font-size: 13px; }
 .lecturer-feature .qualification { margin-bottom: 8px; color: #fff; font-weight: 800; font-size: 12px; }
