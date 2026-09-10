@@ -25,12 +25,12 @@ const PAY_FULL = 'https://payhere.lk/pay/of1d57ff4';
 const COURSE_GUIDE_URL = 'https://drive.google.com/file/d/1shDoi1v58m0RUV7rBOCX7JjnWU8TjH4d/view?usp=sharing';
 
 const audience = [
-  { image: '/assets/psychology-audience-01.png', alt: 'Information for people interested in counselling careers' },
-  { image: '/assets/psychology-audience-02.png', alt: 'Information for uniformed service members' },
-  { image: '/assets/psychology-audience-03.png', alt: 'Information for government-sector professionals' },
-  { image: '/assets/psychology-audience-04.png', alt: 'Information for private-sector professionals' },
-  { image: '/assets/psychology-audience-05.png', alt: 'Information for state university graduates and applicants' },
-  { image: '/assets/psychology-audience-06.png', alt: 'Information for students who have completed ordinary and advanced level education' },
+  { image: '/assets/it-audience-01.png', alt: 'පාසල් හැරගිය සහ වෘත්තිය වෙනස් කරන අය' },
+  { image: '/assets/it-audience-02.png', alt: 'ආරක්ෂක අංශ සේවා' },
+  { image: '/assets/it-audience-03.png', alt: 'පෞද්ගලික අංශයේ වෘත්තිකයින්' },
+  { image: '/assets/it-audience-04.png', alt: 'රාජ්‍ය අංශයේ වෘත්තිකයින්' },
+  { image: '/assets/it-audience-05.png', alt: 'අ.පො.ස. සාමාන්‍ය පෙළ සහ උසස් පෙළ අපේක්ෂකයින්' },
+  { image: '/assets/it-audience-06.png', alt: 'රාජ්‍ය විශ්වවිද්‍යාල සිසුන්' },
 ];
 
 const curriculum = [
@@ -109,7 +109,7 @@ function App() {
             <a href="#faq">FAQ</a>
           </nav>
           <a className="btn btn--small" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-            Apply now <ArrowRight size={16} />
+            Join now <ArrowRight size={16} />
           </a>
         </div>
       </header>
@@ -120,8 +120,8 @@ function App() {
           <div className="hero-orb hero-orb--two" />
           <div className="container hero-grid">
             <div className="hero-copy">
-              <h1>Build your future in <span>Information Technology</span></h1>
-              <p className="hero-lead">A career-focused, 6-month online diploma designed to build practical skills across computer fundamentals, productivity tools, Python programming, hardware, networking, cybersecurity, AI and emerging technologies.</p>
+              <h1>Build your future in <span>Information Technology.</span></h1>
+              <p className="hero-lead">A career focused, 6-month online diploma designed to build practical skills across computer fundamentals, productivity tools, Python programming, hardware, networking, cybersecurity, AI and emerging technologies.</p>
               <div className="hero-actions">
                 <a className="btn hero-action-btn" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Secure Your Scholarship <ArrowRight size={18} /></a>
                 <a className="btn btn--outline hero-action-btn" href={COURSE_GUIDE_URL} target="_blank" rel="noreferrer"><Download size={18} /> Download Course Guide <ArrowRight size={18} /></a>
@@ -129,7 +129,7 @@ function App() {
               <div className="hero-meta">
                 <div><MonitorPlay size={18} /><span><b>Online via Zoom</b><small>Live night lectures</small></span></div>
                 <div><Clock3 size={18} /><span><b>6 Months</b><small>Tuesday & Sunday</small></span></div>
-                <div><GraduationCap size={18} /><span><b>IT pathway</b><small>Diploma → HND → BSc</small></span></div>
+                <div><GraduationCap size={18} /><span><b>IT pathway</b><small>Diploma → BSc</small></span></div>
               </div>
             </div>
 
@@ -145,7 +145,7 @@ function App() {
                 <div><WalletCards size={18} /><span><b>Scholarship plan</b><small>Total LKR 24,000</small></span></div>
               </div>
               <div className="price-row"><span>One-time payment</span><strong>LKR 19,000</strong></div>
-              <a className="btn btn--full" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Start your application</a>
+              <a className="btn btn--full" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Speak to an Advisor</a>
             </aside>
           </div>
         </section>
@@ -179,7 +179,7 @@ function App() {
               </article>
               <article className="image-card">
                 <img src="/assets/ugc-letter.jpg" alt="University Grants Commission recognition letter shown in course material" />
-                <div className="image-card__body"><span>Recognition</span><h3>UGC recognition evidence</h3><p>Recognition documentation is included in the official programme PDF.</p></div>
+                <div className="image-card__body"><span>Recognition</span><h3>UGC Recognition</h3><p>Recognition documentation is included in the official programme PDF.</p></div>
               </article>
               <article className="image-card">
                 <img src="/assets/certificate-profile.jpg" alt="PSB University certificate and graduation award presentation" />
@@ -212,14 +212,13 @@ function App() {
 
         <section className="section section--navy pathway-section">
           <div className="container">
-            <SectionTitle light eyebrow="Academic progression" title="A pathway designed to take you further" description="The course material presents progression from the Diploma in Information Technology to a Higher National Diploma, followed by direct entry to BSc (Hons) Information Technology or BSc (Hons) Software Engineering. The supplied SLQF diagram also shows further postgraduate progression after degree level." />
+            <SectionTitle light eyebrow="Academic progression" title="A pathway designed to take you further" description="The course material presents progression from the Diploma in Information Technology towards BSc (Hons) Information Technology or BSc (Hons) Software Engineering. The supplied SLQF diagram also shows further postgraduate progression after degree level." />
             <div className="pathway-grid">
               {[
                 ['01', 'Diploma', 'Information Technology'],
-                ['02', 'Higher National Diploma', 'Information Technology'],
-                ['03', 'BSc (Hons)', 'Information Technology or Software Engineering'],
-                ['04', 'Master’s', 'Potential postgraduate progression after degree completion'],
-                ['05', 'PhD', 'Advanced academic progression within the wider SLQF pathway'],
+                ['02', 'BSc (Hons)', 'Information Technology or Software Engineering'],
+                ['03', 'Master’s', 'Potential postgraduate progression after degree completion'],
+                ['04', 'PhD', 'Advanced academic progression within the wider SLQF pathway'],
               ].map(([n, title, text]) => (
                 <article className="path-card" key={n}>
                   <span className="path-number">{n}</span>
@@ -279,7 +278,7 @@ function App() {
               <img src="/assets/lecturer-main.jpg" alt="Head lecturer shown in the Information Technology programme material" />
               <div>
                 <span className="eyebrow">Head of Department</span>
-                <h3>Renuka Wickramasinghe</h3>
+                <h3>Thenuka Wickramasinghe</h3>
                 <p className="qualification">International award-winning Head Lecturer • Information Technology</p>
                 <p>The programme message highlights guidance across computer fundamentals, hardware and networking, Python programming, Ethical Hacking, IoT and Artificial Intelligence.</p>
               </div>
